@@ -66,3 +66,23 @@ function PrintNameCall(a, cb) {
 }
 
 PrintNameCall("Masum", printName);
+
+function printVariable(variable) {
+  console.log(variable);
+}
+
+function printWork(name, callback) {
+  callback("Hello " + name);
+}
+
+printWork("Badhon", printVariable);
+
+function newSomething(name, callback) {
+  callback("Hello " + name);
+}
+
+newSomething("Sara", function (variable) {
+  console.log(variable);
+});
+
+// Arrow Function
