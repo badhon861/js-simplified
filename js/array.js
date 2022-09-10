@@ -1,12 +1,12 @@
-const a = [
+const ab = [
   [1, 2, 3, 4, 5],
   [6, 7, 8, 9, 10],
   [11, 12, 13, 14, 15],
 ];
 
-console.log(a[0][3]);
-console.log(a[1][2]);
-console.log(a[2][0]);
+console.log(ab[0][3]);
+console.log(ab[1][2]);
+console.log(ab[2][0]);
 
 // Array methods
 
@@ -49,3 +49,23 @@ const newAnimal = animal.slice(2);
 
 // Array splice() method can be used to add new items in array
 // The splice() method returns an array with the deleted items
+
+const totalNumber = [1, 2, 3, 4, 5];
+
+totalNumber.forEach((item, index) => {
+  console.log(item + " " + index);
+});
+
+// for (var i = 0; i < totalNumber.length; i++) {
+//   console.log(i);
+// }
+
+totalNumber.map((item) => {
+  return item * 2;
+});
+
+const newTotalNumber = totalNumber.filter((item) => {
+  return item <= 2;
+});
+
+newTotalNumber;
